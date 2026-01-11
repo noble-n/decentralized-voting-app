@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import Navbar from '@/components/navbar'  // Add this import
+import Navbar from '@/components/navbar'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        <Navbar />  {/* Add this line */}
+        <Navbar />
         {children}
         <Analytics />
       </body>
